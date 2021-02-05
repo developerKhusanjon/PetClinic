@@ -4,10 +4,6 @@ import dev.khusanjon.petclinic.models.Pet;
 
 import java.util.Set;
 
-public interface PetService {
-    Pet findById(Long id);
+public interface PetService extends CrudService<Pet,Long>{
 
-    void save(Pet pet);
-
-    Set<Pet> findAll();
 }
